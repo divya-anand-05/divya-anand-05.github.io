@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Password Generator</title>
+    <script src="assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/8efa269c87.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div class="main-container">
+    <header>
+        <div class="profile">
+            <a href="https://github.com/karthikgohul" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://linkedin.com/in/karthikgohul-anandhakumar/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <h2 class="title">Password Generator</h2>
+      <form class="input">
+        <div class="form-group">
+            <input class="output" placeholder="Click Generator" type="text" id="password" readonly />
+        </div>
+        <div class="form-group form-length">
+          <label for="length">Length:</label>
+          <input type="number" placeholder="Length 4 - 30" id="length" min="4" max="30" />
+        </div>
+        <div class="settings">
+        <label for="settings" class="label-settings">Settings</label>
+          <div class="form-group">
+            <label for="uppercase">Include Uppercase Letter:</label>
+            <input type="checkbox" id="uppercase" checked />
+          </div>
+          <div class="form-group">
+            <label for="lowercase">Include Lowercase Letter:</label>
+            <input type="checkbox" id="lowercase" checked />
+          </div>
+          <div class="form-group">
+            <label for="numbers">Include Numbers Letter:</label>
+            <input type="checkbox" id="numbers" checked />
+          </div>
+          <div class="form-group">
+            <label for="symbols">Include Symbols Letter:</label>
+            <input type="checkbox" id="symbols" checked />
+          </div>
+        </div>
+        <div class="button">
+        <button type="button" onclick="passwordGenerator()" class="btn">Generate</button>
+        <button type="button" onclick="copyPassword()">Copy</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    <footer class="credit">
+        <p>Created By,</p>
+        <h2>Divyadharshini</h2>
+    </footer>
+  </body>
+</html>
