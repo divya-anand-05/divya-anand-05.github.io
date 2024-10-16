@@ -154,6 +154,8 @@ section {
 form {
     display: flex;
     flex-direction: column;
+    max-width: 400px; /* Optional: set a max-width */
+    margin: 0 auto; /* Optional: center the form */
 }
 
 form label {
@@ -163,6 +165,8 @@ form label {
 form input, form textarea {
     padding: 8px;
     margin-top: 5px;
+    border: 1px solid #ccc; /* Optional: add a border */
+    border-radius: 4px; /* Optional: add rounded corners */
 }
 
 form button {
@@ -172,9 +176,14 @@ form button {
     background-color: #e2f58e;
     color: #171816;
     border: none;
+    border-radius: 4px; /* Optional: add rounded corners */
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
+}
+
+form button:hover {
+    background-color: #d0e05f; /* Optional: add a hover effect */
 }
 
 footer {
