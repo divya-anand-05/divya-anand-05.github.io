@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyadharshini's Portfolio</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="top-left">
+        <a href="https://divya-anand-05.github.io" target="_blank" id="profile-link">Portfolio</a>
+    </div>
+    <header>
+        <nav id="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="unorder">
+                <li><a href="#About_Me" class="nav-list" onclick="setActive(this)">About</a></li>
+                <li><a href="#education" class="nav-list" onclick="setActive(this)">Education</a></li>
+                <li><a href="#projects" class="nav-list" onclick="setActive(this)">Projects</a></li>
+                <li><a href="#contact" class="nav-list" onclick="setActive(this)">Contact</a></li>
+            </ul>
+            <section id="welcome-section">
+                <h1 id="welcome-text">WELCOME TO MY PORTFOLIO!</h1>
+            </section>
+            <div class="profile-pic-container">
+                <img src="assets/images/myprofile.jpeg" alt="Divyadharshini's Picture" class="profile-pic">
+            </div>
+            <h1 class="name">Divyadharshini</h1>
+
+            <p class="para">
+                <a href="https://github.com/divya-anand-05/divya-anand-05.github.io" target="_blank" class="social-link"
+                    id="github">
+                    <i class="fab fa-github"></i> Github
+                </a>
+                <span>|</span>
+                <a href="https://in.linkedin.com/in/divyaanand03?trk=people-guest_people_search-card" target="_blank"
+                    class="social-link" id="linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <span>|</span>
+                <a href="https://instagram.com/divya_anand_05" target="_blank" class="social-link" id="instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </p>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="About_Me">
+            <h1>ABOUT ME</h1>
+            <p id="paragraph">Hello! I’m Divyadharshini, Aspiring web developer with a solid foundation in HTML, CSS, and
+                JavaScript. Passionate about creating visually appealing and responsive web applications. Eager to apply
+                my skills in a collaborative environment and contribute to impactful projects,Explore my work and feel
+                free to get in touch!</p>
+        </section>
+        <hr class="horizontal-line"><br>
+        <section id="education">
+            <h1 class="education-title">EDUCATION</h1>
+            <div class="educations">
+                <div class="education-img">
+                    <img src="assets/images/hey.svg">
+                </div>
+                <div class="education-details">
+                    <ul class="education-answer">
+                        <li>
+                            <div>
+                            <div class="logo"><i class="fas fa-book"></i></div>
+                                <div class="education-info">
+                                <h4>NPR Arts and Science College</h4>
+                                <p class="date">2019 - 2023</p>
+                                <p class="degree">BCA - 8.2 CGPA</p>
+                            </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="logo"><i class="fas fa-book"></i></div>
+                                    <div class="education-info">
+                                <h4>Government Girls Higher Secondary School</h4>
+                                <p class="date">2020 - 2021</p>
+                                <p class="degree">HSC - 85%</p>
+                            </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="logo"><i class="fas fa-book"></i></div>
+                                <div class="education-info">
+                                <h4>Government Higher Secondary School</h4>
+                                <p class="date">2018 - 2019</p>
+                                <p class="degree">SSLC - 83%</p>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button id="backToTop" class="back-to-top">
+            <i class="fas fa-rocket"></i>
+        </button>
+        <hr class="horizontal-line"><br>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="container">
+                <div id="project-tile">
+                    <h3 class="pro">Project 1</h3>
+                    <p> Simple Snake Game</p>
+                        <img src="assets/images/snake.png" alt="Simple Snake Game project Image">
+                    </div>
+                    <div id="project-tile">
+                    <h3 class="pro">Project 2</h3>
+                    <p><a
+                            href="https://github.com/divya-anand-05/divya-anand-05.github.io/blob/main/Random%20joke.html">Random
+                            Joke generator</a></p>
+                        <img src="assets/images/joke.png" alt="Random joke Generator project image">
+                </div>
+                <div id="project-tile">
+                    <h3 class="pro">Project 3</h3>
+                    <p>Interactive Panda form</p>
+                        <img src="assets/images/panda.png" alt="interactive panda form project Image">
+                    </div>
+                <div class="project-tile">
+                    <h3 class="pro">Project 4</h3>
+                    <p> Simple Web-Monkey magic</p>
+                        <img src="assets/images/monkey.png" alt=" simple web monkey magic project image">
+                    </div>
+                    
+            </div>
+
+        </section>
+<hr class="horizontal-line">
+        <section id="skills">
+            <h2 class="gen-skill">General Skills</h2>
+            <div class="skills-container">
+                <div>
+                    <img src="assets/images/html.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src="assets/images/css-logo.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src="assets/images/responsive web desingn.png" alt="Responsive Web Design Logo">
+                    <p>Responsive<br> Web Design</p>
+                </div>
+                <div>
+                    <img src="assets/images/javascript-logo.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div>
+                    <img src="assets/images/git.jpg" alt="Git Logo">
+                    <p>Git</p>
+                </div>
+                <div>
+                    <img src="assets/images/github.png" alt="Github Logo">
+                    <p>Github</p>
+                </div>
+                <div>
+                    <img src="assets/images/react.png" alt="React Logo">
+                    <p>React</p>
+                </div>
+            </div>
+        </section>
+        <hr class="horizontal-line">
+        <section id="cert">
+            <div class="cert-container">
+                <h1>CERTIFICATE</h1>
+                <img src="assets/images/Responsive web design.png" alt="responsive web design certificate">
+            </div>
+        </section>        
+<hr class="horizontal-line">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xeoqqrbl" method="POST">
+                <label>
+                    Your email:<br>
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:<br>
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Portfolio by Divyadharshini</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
