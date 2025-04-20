@@ -4,7 +4,7 @@
 
 ![Portfolio Banner](./banner.png)
 
-Welcome to my personal portfolio website! This project showcases who I am, what I do, and how to get in touch with me. Built using HTML and CSS, it’s designed to be responsive and stylish.
+Welcome to my personal portfolio website! This project showcases who I am, what I do, and how to get in touch with me. Built using **HTML** , **CSS** and **JavaScript**, it’s designed to be responsive and stylish.
 
 ## 🚀 Features
 
@@ -18,14 +18,18 @@ Welcome to my personal portfolio website! This project showcases who I am, what 
 
 ├── index.html 
 
-├── style.css # Stylesheet 
+├── style.css  
 
 
 ## 💻 Technologies Used
 
 - HTML5
+  
 - CSS3
+  
 - Responsive Web Design
+  
+- JavaScript
 
 
 ## 📬 Contact
