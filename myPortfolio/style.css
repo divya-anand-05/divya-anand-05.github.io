@@ -115,7 +115,7 @@ nav .navlinks li a:hover {
 }
 
 /* Profile Content */
-.container {
+ .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
