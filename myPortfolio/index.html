@@ -83,13 +83,22 @@
     <section id="portfolio" class="portfolio-section">
         <h2>My Portfolio</h2>
         <div class="portfolio-container">
-            <div class="project-card">
-                <img src="assets/images/snake.png" alt="Project 1">
-                <h3>Simple Snake Game</h3>
-                <p>Created a classic Snake Game with game-over conditions, improving understanding of JavaScript and game logic</p>
-                <div class="project-links">
-                    <a href="https://divya-anand-05.github.io/SimpleGame/" target="_blank">Live Demo</a>
+           <div class="project-card">
+                <div class="slider">
+                    <div class="slides">
+                        <img src="assets/images/csharp1.png" alt="Slide 1">
+                        <img src="assets/images/csharp2.png" alt="Slide 2">
+                        <img src="assets/images/csharp3.png" alt="Slide 3">
+                        <img src="assets/images/csharp4.png" alt="Slide 4">
+                    </div>
+                    
                 </div>
+                <h3>Student Record Management System</h3>
+                <p>Developed a full CRUD student record system with dynamic updates, showcasing real-world database interaction simulations.</p>
+                <div class="project-links">
+                    <a href="https://github.com/divya-anand-05/StudentRecordManagement" target="_blank">View Code</a>
+                </div>
+            </div>
             </div>
             <div class="project-card">
                 <img src="assets/images/joke1.png" alt="Project 2">
@@ -239,6 +248,38 @@ prev.addEventListener('click', () => {
   index = (index - 1 + totalSlides) % totalSlides;
   updateSlidePosition();
 });
+
+         //Student management project slides
+
+         document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach(card => {
+        const slides = card.querySelector('.slides');
+        
+        let index = 0;
+        let interval;
+
+        
+
+        function startCarousel() {
+            interval = setInterval(() => {
+                index = (index + 1) % 4; // 4 slides
+                showSlide(index);
+            }, 2000); // every 2 seconds
+        }
+
+        function stopCarousel() {
+            clearInterval(interval);
+            index = 0;
+            showSlide(index); // reset to first slide
+        }
+
+        card.addEventListener('mouseenter', startCarousel);
+        card.addEventListener('mouseleave', stopCarousel);
+    });
+});
+
   </script>
 </body>
 </html>
